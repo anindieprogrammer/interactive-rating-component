@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+p {
+  font-size: 15px;
+  color: var(--lightGrey);
+}
+
+.section {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--veryDarkBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* common container */
+.container {
+  height: 328px;
+  width: 320px;
+  background-color: hsla(213, 19%, 18%, 0.75);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.container .head {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.container .desc {
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Rating container */
+.rating-container .icon-star {
+  background-color: hsla(216, 12%, 54%, 0.1);
+  padding: 0.7rem;
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+}
+
+.rating-container .ratings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.rating-container .ratings .rating {
+  background-color: hsla(216, 12%, 54%, 0.1);
+  padding: 0.5rem;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  color: var(--lightGrey);
+}
+
+.rating-container .ratings .rating:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.rating-container .ratings .selected {
+  background-color: var(--lightGrey);
+  color: var(--white);
+}
+
+.rating-container .submit {
+  width: 100%;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 1.25rem;
+  padding: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 2.5px;
+}
+
+.rating-container .submit:hover {
+  background-color: var(--white);
+  color: red;
+}
+
+/* Thankyou Container */
+
+.thank-you-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-container img {
+  width: 132px;
+  height: 88px;
+  margin: 1.5rem 0rem;
+}
+
+.thank-you-container .rating-message {
+  color: red;
+  font-size: 00.75rem;
+  padding: 0.5rem 1rem;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.thank-you-container .desc {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
