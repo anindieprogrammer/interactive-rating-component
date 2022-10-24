@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github]()
-- Live Site URL: [Netlify]()
+- Solution URL: [Github](https://github.com/anindieprogrammer/interactive-rating-component)
+- Live Site URL: [Netlify](https://remarkable-eclair-1f006b.netlify.app)
 
 ## My process
 
