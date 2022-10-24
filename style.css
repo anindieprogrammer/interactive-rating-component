@@ -111,7 +111,6 @@ p {
 }
 
 /* Thankyou Container */
-
 .thank-you-container {
   display: flex;
   flex-direction: column;
@@ -140,4 +139,44 @@ p {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 375px) {
+  /* common container */
+  .container {
+    height: 360px;
+    width: 328px;
+    padding: 1.75rem;
+  }
+
+  .container .head {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .container .desc {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Rating container */
+  .rating-container .icon-star {
+    padding: 0.75rem;
+    margin-bottom: 1.33rem;
+  }
+
+  .rating-container .ratings .rating {
+    padding: 0.75rem;
+  }
+
+  .rating-container .submit {
+    border-radius: 1.5rem;
+    padding: 16px 12px;
+  }
+
+  /* Thankyou Container */
+  .thank-you-container .rating-message {
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1.75rem;
+  }
 }
